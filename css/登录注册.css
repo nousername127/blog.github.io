@@ -1,0 +1,104 @@
+*{
+	margin:20px 30px;
+	padding:0;
+	box-sizing: border-box;
+/* 	background-image: url(../img/1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat; */
+}
+
+body{
+	font-family: "arial black";
+	line-height:1.6;
+}
+
+header{
+	background-color:#F4F4F4;
+	padding:16px;
+	text-align: center;
+	font-size:30px;
+}
+
+.container{
+	margin:auto;
+	width:600px;
+	overflow:auto;
+	padding:100px 20px;
+}
+
+#myform{
+	padding:50px;
+	background-color: #F4F4F4;
+}
+
+#myform lable{
+	display:block;
+	font-size:25px;
+	margin:3px;
+}
+
+#myform input[type='text'],#myform input[type='password']{
+	width:100%;
+	padding:8px;
+	margin:0px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+
+.btn{
+	display:block;
+	width:20%;
+	padding:10px 5px;
+	border:0;
+	background-color:#333333;
+	color:#fff;
+	border-radius: 5px;
+	margin:auto;
+}
+
+.btn:hover{
+	background-color:#444444 ;
+}
+
+.btn:active{
+	background-color: #8f2600;
+}
+
+.error{
+	background-color:orangered;
+	color:#fff;
+	padding:5px;
+	margin:10px 35px;
+}
+
+#link{
+	display:block;
+	/* background-color:red; */
+	text-align: center;
+	margin:10px auto;
+	font-size: 20px;
+	font-style: italic;
+	text-decoration: none;
+	color: #444444;
+}
+
+#link:hover{
+	color: #8f4113;
+}
+
+#link:active{
+	color:red;
+}
+
+#foot{
+	margin:auto;
+}
+
+#foot a{
+	text-decoration: none;
+	color:black;
+	font-size: 18px;
+	font-family: "arial narrow";
+	background-color: #ccc;
+}
