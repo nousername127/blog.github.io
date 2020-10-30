@@ -95,14 +95,20 @@
 }
 
 input[type="checkbox"]{
-	position:fixed;
+	/* position:fixed;
 	z-index:1;
 	right:50px;
-	top:12px;
+	top:12px; */
+	display:block;
+	float:left;
+	margin:10px 0 10px 5%;
 	cursor:pointer;
 }
 input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器  ~ 后面指明选中的元素的名称 */
 	filter:invert(1);
+}
+#dark{
+	
 }
 #line{
 	width:100%;
@@ -114,17 +120,17 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 	width:1200px;
 	/* background-color: #252525; */
 	margin:10px auto;
+	padding:0 0;
 }
 #left{
 /* 	float:left; */
 	position:fixed;
 	height:600px;
-	width:220px;
+	width:280px;
 	border:1px solid #ACC0DB;
-	/* margin:20px 15px 0 15px; */
-	/* margin:5%; */
-	left:8%;
-	top:20%;
+	margin-left:0;
+	left:2.5%;
+	top:10%;
 }
 #center{
 /* 	float:left; */
@@ -137,12 +143,10 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 	/* float:left; */
 	position:fixed;
 	height:600px;
-	width:220px;
+	width:280px;
 	border:1px solid #ACC0DB;
-	/* margin:50px 500px 15px 15px; */
-	/* margin:5%; */
-	right:8%;
-	top:20%;
+	right:2.5%;
+	top:10%;
 }
 #avatar{            /* 头像*/
 	display: block;
@@ -190,23 +194,24 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 }
 .text{
 	/* border:1px solid; */
-	font-size:19px;
+	font-size:14px;
 	width:90%;
 	margin:15px auto;
 }
 .blog .title a{
-	font-size: 35px;
+	font-size: 25px;
 	text-decoration: none;
 	color: #ACC0DB;
 }
 .sub span{
+	font-size:15px;
 	margin-left:20px;
 	color: #d9d6db;
 }
 .sub span a{
 	text-decoration: none;
 	color: #d9d6db;
-	font-size:20px;
+	font-size:15px;
 }
 .sub a:hover{
 	color: #ACC0DB;
@@ -321,4 +326,27 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 	bottom: 5px;
 	width:3%;
 	height:auto;
+}
+
+
+.sortlable{
+	display:block;
+	float:left;
+	margin:5px 3% 0 3%;
+	
+}
+.sortlable a{
+	text-decoration: none	color:black;
+	font-family: "arial black";
+	text-decoration: none;
+	color:#252525;
+}
+.sortlable a:hover{
+	color: #8F2600;
+}
+#sortcenter{
+	width:50%;
+	border:1px solid #ACC0DB;
+	margin:8px auto;
+	height:400px;
 }
