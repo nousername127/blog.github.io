@@ -333,13 +333,15 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 	display:block;
 	float:left;
 	margin:5px 3% 0 3%;
-	
+	border:3px solid #7397ad;
+	background-color: #7397ad;
+	border-radius:5px;
 }
 .sortlable a{
 	text-decoration: none	color:black;
 	font-family: "arial black";
 	text-decoration: none;
-	color:#252525;
+	color:#515151;
 }
 .sortlable a:hover{
 	color: #8F2600;
@@ -349,4 +351,44 @@ input[type="checkbox"]:checked ~ #container{     /* ：checked是伪类选择器
 	border:1px solid #ACC0DB;
 	margin:8px auto;
 	height:400px;
+}
+#newcenter{
+	width:50%;
+	border:1px solid #ACC0DB;
+	margin:8px auto;
+	height:420px;
+}
+#newcenter p{
+	font-size: 3px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+}
+#newcenter input{
+	border-radius:5px;
+	margin:5px 0 5px 5px;
+}
+#text{
+	width:90%;
+	height:55%;
+}
+#newcenter textarea{
+	margin-left:5px;
+}
+#newcenter button{
+	margin:3px 0 0 5px;
+	border-radius: 3px;
+	border:0;
+	background-color: #7397AD;
+	width:45px;
+	height:22px;
+}
+#newcenter h2{
+	margin-left:5px;
+	margin-top:3px;
+}
+
+#myinformation{
+	width:1200px;
+	margin:10px auto;
 }
