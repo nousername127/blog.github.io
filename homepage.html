@@ -32,7 +32,7 @@
 				</div>
 				
 				<input type="checkbox" id="dark" onclick="darkmode()"/>
-				<!-- <button id="darkmode" onclick="darkmode()">夜间模式</button> -->
+				<lable for="dark"></lable>
 			</div>
 			<div id="line"></div>
 			<div id="content">
@@ -184,9 +184,16 @@
 	</body>
 	<script>
 		function darkmode(){
-			var container=document.getElementById("container");
-			/* container.style.backgroundColor='#444444'; */
-			container.style.filter='invert(1)';
-		}
+					if(document.getElementById("dark").checked){
+						var container=document.documentElement;
+						/* container.style.backgroundColor='#444444'; */
+						container.style.filter='invert(80%)';
+					}
+					else{
+						var container=document.documentElement;
+						/* container.style.backgroundColor='#444444'; */
+						container.style.filter='invert(0.5%)';
+					}
+				}
 	</script>
 </html>
