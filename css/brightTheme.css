@@ -126,6 +126,9 @@ lable{
 }
 #left{
 /* 	float:left; */
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 	position:fixed;
 	height:600px;
 	width:280px;
@@ -138,12 +141,16 @@ lable{
 #center{
 /* 	float:left; */
 	/* height:2000px; */
+	display:flex;
+	flex-direction: column;
 	width:50%;
 	border:1px solid #ACC0DB;
 	margin:8px auto;
 }
 #right{ 
 	/* float:left; */
+	display:flex;
+	flex-direction: column;
 	position:fixed;
 	height:600px;
 	width:280px;
@@ -152,18 +159,29 @@ lable{
 	top:11%;
 }
 #avatar{            /* 头像*/
+	display: flex;
 	display: block;
 	margin:15px auto 5px auto;
 	width:30%;
 	height:auto;
 }
 #username{
+	display: flex;
 	text-align: center;
 }
+#infocolumn{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content:center;
+	width:100%;
+}
 .info{
-	float:left;
-	width:25%;
-	margin:10px 8px;
+	display: flex; 
+	/* float:left; */
+	flex-direction: column;
+	width:30%;
+	margin:10px 10%;
 	padding:0 0;
 }
 .info p{

@@ -20,7 +20,7 @@
 					<lable for="name">密码</lable>
 					<input type="password" id="psw" />
 				</div>
-				<input class="btn" type="submit" value="登录" />
+				<input class="btn" type="button" value="登录" onclick="check()"/>
 				<div>
 					<a href="#" id="link">立即注册</a>
 				</div>
@@ -32,6 +32,20 @@
 				<a href="#">使用条款</a>
 			</div>
 		</section>
-		<script src="./js/page.js"></script>
+		<script>
+			function check(){
+				var name,psw;
+				name=document.getElementById("name").value;
+				psw=document.getElementById("psw").value;
+				if(name=="admin"&&psw=="123"){
+					alert("登录成功！");
+					window.location.href="index.html";
+				}
+				else{
+					alert("用户名或密码出错！");
+					return;
+				}
+			}
+		</script>
 	</body>
 </html>
