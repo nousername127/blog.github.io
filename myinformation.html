@@ -2,40 +2,51 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 		<title>个人信息</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/brightTheme.css"/>
+		<link href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+		<link media="(max-width:670px)" rel="stylesheet" type="text/css" href="css/mobile.css"/>
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link href="css/naranja.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/popup.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<style>
+			#myinformation div span a{
+				text-decoration: none;
+				display: block;
+				float: right;
+				margin-right: 20%;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="header">
-			<div id="logo">
-				<a href="#">
-					<img src="img/logo-tux.png" /> 
-				</a>
+			<div id="myinformation">
+				<div>
+					<span>用户名：</span>
+					<span id="info_username"></span>
+					<span><a href="#" onclick="edit(this)">修改</a></span>
+				</div>
+				<div>
+					<span>邮箱：</span>
+					<span id="info_mail"></span>
+					<span><a href="#" onclick="edit(this)">修改</a></span>
+				</div>
+				<div>
+					<span>性别：</span>
+					<span id="info_gender"></span>
+					<span><a href="#" onclick="edit(this)">修改</a></span>
+				</div>
+				<div>
+					<span>地址：</span>
+					<span id="info_address"></span>
+					<span><a href="#" onclick="edit(this)">修改</a></span>
+				</div>
 			</div>
-			<div id="title">
-				MyBlog
+			<div class="backtop">
+				<a href="#"><img src="img/回到顶部.png"></a>
 			</div>
-			<ul id="list">
-				<li class="link"><a href="#">首页</a></li>
-				<li class="link"><a href="sort.html">标签</a></li>
-				<li class="link"><a href="new.html">创作</a></li>
-				<li class="link"><a href="#">关于</a></li>
-			</ul>
-			<div id="search">
-				<input  type="text" placeholder="搜索您感兴趣的内容"/>
-				<a href="#"><img src="img/搜索.png"/></a>
-			</div> 
-			<div id="sign">
-				<a href="login.html">登录/注册</a>
-			</div>
-			
-			<input type="checkbox" id="dark" onclick="darkmode()"/>
-			<!-- <button id="darkmode" onclick="darkmode()">夜间模式</button> -->
-		</div>
-		<div id="line"></div>
-		<div id="myinformation">
-			用户名：
-		</div>
 	</body>
+	<script type="text/javascript" src="dist/js/jquery.min.js"></script>
+	<script src="js/info.js"></script>
 </html>

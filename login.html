@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>账号登录</title>
 	</head>
-	<link href="./css/登录注册.css" rel="stylesheet" type="text/css" />
+	<link href="css/login.css" rel="stylesheet" type="text/css" />
 	<body>
 		<header>
 			<h1>账号登录</h1>
@@ -32,20 +32,6 @@
 				<a href="#">使用条款</a>
 			</div>
 		</section>
-		<script>
-			function check(){
-				var name,psw;
-				name=document.getElementById("name").value;
-				psw=document.getElementById("psw").value;
-				if(name=="admin"&&psw=="123"){
-					alert("登录成功！");
-					window.location.href="index.html";
-				}
-				else{
-					alert("用户名或密码出错！");
-					return;
-				}
-			}
-		</script>
+		<script type="text/javascript" src="js/login.js"></script>
 	</body>
 </html>

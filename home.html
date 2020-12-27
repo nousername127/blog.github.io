@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>首页</title>
+		<link href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/desktop.css" />
+		<link media="(max-width:670px)" rel="stylesheet" type="text/css" href="css/mobile.css"/>
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<title></title>
+	</head>
+	<body>
+		<div id="content">
+			<div id="left">
+				<img src="img/头像.png" id="avatar" onclick="showInfo()"/>
+				<h2 id="username">username</h2>
+				<div id="infocolumn">
+					<div class="info">
+						<p><a href="#">关注</a></p>
+						<p>5</p>
+					</div>
+					<div class="info">
+						<p><a href="#">粉丝</a></p>
+						<p>10</p>
+					</div>
+					<div class="info">
+						<p><a href="#">文章</a></p>
+						<p>5</p>
+					</div>
+				</div>
+				<div id="plz_login">登录账户以查看个人信息！</div>
+			</div>
+			<div id="fold">
+				<img src="img/收起.png" />
+			</div>
+			<div id="center"></div>
+			<div id="right">
+				<h3>最新文章</h5>
+			</div>
+		</div>
+	</body>
+	<script src="js/template-web.js"></script>
+	<script type="text/text/javascript" id="blog_template">  
+		<div class="blog">
+			<div class="title"><a href="{{titleurl}}">{{title}}</a></div>
+			<span class="time">{{time}}</span>
+			{{each tag}}     <!-- 循环tag数组 -->
+			<span class="tag">{{$value}}</span>
+			{{/each}}
+			<img class="img" src={{imageurl}}>
+			<div class="text">{{text}}</div>
+			<div style="width:100%;height:30px">  <!-- 雪碧图-->
+				<div style="float:left;width:45px;height:100%;background-image:url(img/sprites.png);background-position:0 -12px;margin:0 0 0 18%" ></div>
+				<div style="float:left;width:45px;height:100%;background-image:url(img/sprites.png);background-position:0 -62px;margin:0 0 0 18%"></div>
+				<div style="float:left;width:45px;height:100%;background-image:url(img/sprites.png);background-position:0 -115px;margin:0 0 0 18%"></div>
+			</div>
+		</div>
+	</script>
+	<script type="text/html" id="detail_template"> 
+		<div class="title" style="font-size: 25px;">{{title}}</div>
+		<div>
+			<span class="tag">{{time}}</span>
+			{{each tag}}
+			<span class="tag">{{$value}}</span>
+			{{/each}}
+			<div class="context">
+				{{each imgurl}}
+				<img src={{$value}} />
+				{{/each}}
+				<p>{{page}}</p>
+			</div>
+		</div>
+	</script>
+	<script type="text/html" id="view_template">  
+		<div class="view">
+			<img src={{imgSrc}} />
+			<div class="tview">
+				<p>{{time}}</p>
+				<p><a href={{detailUrl}}>{{title}}</a></p>
+				<p>
+					{{each tag}}
+					<a href="#">{{$value}}</a>
+					{{/each}}
+				</p>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="dist/js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/blog.js"></script>
+</html>

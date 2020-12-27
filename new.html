@@ -4,150 +4,22 @@
 		<meta charset="utf-8">
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/brightTheme.css"/>
+		<link rel="stylesheet" type="text/css" href="css/desktop.css"/>
 	</head>
 	<body>
-		<div id="container">
-			<div id="header">
-				<div id="logo">
-					<a href="#">
-						<img src="img/logo-tux.png" /> 
-					</a>
-				</div>
-				<div id="title">
-					MyBlog
-				</div>
-				<ul id="list">
-					<li class="link"><a href="#">首页</a></li>
-					<li class="link"><a href="sort.html">标签</a></li>
-					<li class="link"><a href="#">创作</a></li>
-					<li class="link"><a href="#">关于</a></li>
-				</ul>
-				<div id="search">
-					<input  type="text" placeholder="搜索您感兴趣的内容"/>
-					<a href="#"><img src="img/搜索.png"/></a>
-				</div> 
-				<div id="sign">
-					<a href="login.html">登录/注册</a>
-				</div>
-				
-				<input type="checkbox" id="dark" onclick="darkmode()"/>
-				<!-- <button id="darkmode" onclick="darkmode()">夜间模式</button> -->
+		<div id="newcenter">
+				<h2>创作您的文章</h2>
+				<p>标题</p>
+				<input type="text" />
+				<p>标签</p>
+				<input type="text" placeholder="请用空格隔开"/>
+				<p>内容</p>
+				<!-- <input type="text" id="text"/> -->
+				<textarea cols="60" rows="12"></textarea>
+				<br />
+				<button onclick="submit()">发布</button>
 			</div>
-			<div id="line"></div>
-			<div id="content">
-				<div id="left">
-					<img src="img/头像.png" id="avatar"/>
-					<h2 id="username">username</h2>
-					
-					<!-- <div id="location">
-						<img src="img/定位.png"/>
-						<a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E/147639?fr=aladdin">Zhejiang Hangzhou</a>
-					</div> -->
-					
-					<div class="info">
-						<p><a href="#">关注</a></p>
-						<p>5</p>
-					</div>
-					<div class="info">
-						<p><a href="#">粉丝</a></p>
-						<p>10</p>
-					</div>
-					<div class="info">
-						<p><a href="#">文章</a></p>
-						<p>5</p>
-					</div>
-				</div>
-				<div id="newcenter">
-					<h2>创作您的文章</h2>
-					<p>标题</p>
-					<input type="text" />
-					<p>标签</p>
-					<input type="text" placeholder="请用空格隔开"/>
-					<p>内容</p>
-					<!-- <input type="text" id="text"/> -->
-					<textarea cols="60" rows="12"></textarea>
-					<br />
-					<button onclick="submit()">发布</button>
-				</div>
-				
-				
-				<div id="right">
-					<h3>最新文章</h5>
-					
-					<div class="view">
-						<img src="img/blog1.jpg" />
-						<div class="tview">
-							<p>2020-09-16</p>
-							<p><a href="page1.html">【福建·厦门】半发酵的浪漫格调</a></p>
-							<p>
-								<a href="#">#四川成都#</a>
-								<a href="#">#美食#</a>
-							</p>
-						</div>
-					</div>
-				
-					<div class="view">
-						<img src="img/blog2.jpg" />
-						<div class="tview">
-							<p>2020-09-16</p> 
-							<p><a href="page2.html">【四川】成都美食 麻辣鲜香</a></p>
-							<p>
-								<a href="#">#福建厦门#</a>
-								<a href="#">#中山路#</a>
-							</p>
-						</div>
-					</div>
-				
-					<div class="view">
-						<img src="img/blog3.jpg" />
-						<div class="tview">
-							<p>2020-09-16</p>
-							<p><a href="page3.html">北京CBD的街头艺术品</a></p>
-							<p>
-								<a href="#">#北京#</a>
-								<a href="#">#艺术#</a>
-							</p>
-						</div>
-					</div>
-					
-					<div class="view">
-						<img src="img/blog4.jpg" />
-						<div class="tview">
-							<p>2020-09-16</p>
-							<p><a href="page4.html">阳元山传奇，造物主最给力的杰作！</a></p>
-							<p>
-								<a href="#">#广东#</a>
-								<a href="#">#丹霞山#</a>
-							</p>
-						</div>
-					</div>
-						
-					<div class="view">
-						<img src="img/blog5.jpg" />
-						<div class="tview">
-							<p>2020-09-16</p>
-							<p><a href="">好一座宁远古城 东北游</a></p>
-							<p><a href="page5.html">#辽宁#</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="backtop">
-				<a href="#"><img src="img/回到顶部.png"></a>
-			</div>
-		</div>
-	
 	</body>
-	<script>
-		function darkmode(){
-			var container=document.getElementById("container");
-			/* container.style.backgroundColor='#444444'; */
-			container.style.filter='invert(1)';
-		}
-		function submit(){
-			alert("发布成功！");
-		}
-	</script>
+	<script type="text/javascript" src="js/new.js"></script>
 </html>
 

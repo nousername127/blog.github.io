@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "nousername127 <3261404635@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nousername127/blog.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
