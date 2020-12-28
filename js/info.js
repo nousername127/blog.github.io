@@ -1,5 +1,14 @@
 window.onload=function(){
 	var data=getCookie("username");
+
+        if(data==''){
+		document.cookie='username=username';
+		document.cookie='mail=123@hdu';
+		document.cookie='gender=男';
+		document.cookie='address=杭州';
+		data=getCookie("username");
+	}        
+   
 	var text=document.createTextNode(data);
 	var info_username=document.getElementById("info_username");
 	info_username.appendChild(text);
